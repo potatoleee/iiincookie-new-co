@@ -14,9 +14,10 @@ $(document).ready(function () {
   }); // scoll end
   //  漢堡選單 start
 
-  $('.btn-buger').click(function (e) {
-    $('.nav-content_main').toggleClass('open');
-    $('.btn-buger').toggleClass('open');
+  $('.btn-burger').click(function (e) {
+    $('.nav__content__main').toggleClass('open');
+    $('.nav__content__main a').toggleClass('open');
+    $('.btn-burger').toggleClass('open');
   }); //  漢堡選單 end
   //點小圖換大圖 start
 
