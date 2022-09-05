@@ -7,10 +7,10 @@ $(window).on('load', function () {
 
 $(document).ready(function () {
   // scoll top
-  $('.pagetop').click(function () {
+  $('.pagetop').on('click', function () {
     $('html,body').animate({
       scrollTop: 0
-    }, 1000);
+    });
   }); // scoll end
   //  漢堡選單 start
 
