@@ -9231,6 +9231,10 @@ fieldset:disabled .btn {
   top: 0 !important;
 }
 
+.top-m48 {
+  top: -48px !important;
+}
+
 .top-12p {
   top: 12% !important;
 }
@@ -9297,6 +9301,10 @@ fieldset:disabled .btn {
 
 .bottom-0 {
   bottom: 0 !important;
+}
+
+.bottom-m48 {
+  bottom: -48px !important;
 }
 
 .bottom-12p {
@@ -9367,6 +9375,10 @@ fieldset:disabled .btn {
   left: 0 !important;
 }
 
+.start-m48 {
+  left: -48px !important;
+}
+
 .start-12p {
   left: 12% !important;
 }
@@ -9433,6 +9445,10 @@ fieldset:disabled .btn {
 
 .end-0 {
   right: 0 !important;
+}
+
+.end-m48 {
+  right: -48px !important;
 }
 
 .end-12p {
@@ -11587,6 +11603,26 @@ fieldset:disabled .btn {
   visibility: hidden !important;
 }
 
+.z-1 {
+  z-index: 1 !important;
+}
+
+.z-2 {
+  z-index: 2 !important;
+}
+
+.z-3 {
+  z-index: 3 !important;
+}
+
+.z-4 {
+  z-index: 4 !important;
+}
+
+.z-5 {
+  z-index: 5 !important;
+}
+
 .opacity-0 {
   opacity: 0 !important;
 }
@@ -11764,13 +11800,13 @@ fieldset:disabled .btn {
   letter-spacing: 32px !important;
 }
 
-.writing-rl {
+.vertical-rl {
   -webkit-writing-mode: vertical-rl !important;
       -ms-writing-mode: tb-rl !important;
           writing-mode: vertical-rl !important;
 }
 
-.writing-lr {
+.vertical-lr {
   -webkit-writing-mode: vertical-lr !important;
       -ms-writing-mode: tb-lr !important;
           writing-mode: vertical-lr !important;
@@ -13171,6 +13207,21 @@ fieldset:disabled .btn {
   .text-sm-center {
     text-align: center !important;
   }
+  .z-sm-1 {
+    z-index: 1 !important;
+  }
+  .z-sm-2 {
+    z-index: 2 !important;
+  }
+  .z-sm-3 {
+    z-index: 3 !important;
+  }
+  .z-sm-4 {
+    z-index: 4 !important;
+  }
+  .z-sm-5 {
+    z-index: 5 !important;
+  }
   .opacity-sm-0 {
     opacity: 0 !important;
   }
@@ -13301,12 +13352,12 @@ fieldset:disabled .btn {
   .letterSpace-sm-32 {
     letter-spacing: 32px !important;
   }
-  .writing-sm-rl {
+  .vertical-sm-rl {
     -webkit-writing-mode: vertical-rl !important;
         -ms-writing-mode: tb-rl !important;
             writing-mode: vertical-rl !important;
   }
-  .writing-sm-lr {
+  .vertical-sm-lr {
     -webkit-writing-mode: vertical-lr !important;
         -ms-writing-mode: tb-lr !important;
             writing-mode: vertical-lr !important;
@@ -14706,6 +14757,21 @@ fieldset:disabled .btn {
   .text-md-center {
     text-align: center !important;
   }
+  .z-md-1 {
+    z-index: 1 !important;
+  }
+  .z-md-2 {
+    z-index: 2 !important;
+  }
+  .z-md-3 {
+    z-index: 3 !important;
+  }
+  .z-md-4 {
+    z-index: 4 !important;
+  }
+  .z-md-5 {
+    z-index: 5 !important;
+  }
   .opacity-md-0 {
     opacity: 0 !important;
   }
@@ -14836,12 +14902,12 @@ fieldset:disabled .btn {
   .letterSpace-md-32 {
     letter-spacing: 32px !important;
   }
-  .writing-md-rl {
+  .vertical-md-rl {
     -webkit-writing-mode: vertical-rl !important;
         -ms-writing-mode: tb-rl !important;
             writing-mode: vertical-rl !important;
   }
-  .writing-md-lr {
+  .vertical-md-lr {
     -webkit-writing-mode: vertical-lr !important;
         -ms-writing-mode: tb-lr !important;
             writing-mode: vertical-lr !important;
@@ -16241,6 +16307,21 @@ fieldset:disabled .btn {
   .text-lg-center {
     text-align: center !important;
   }
+  .z-lg-1 {
+    z-index: 1 !important;
+  }
+  .z-lg-2 {
+    z-index: 2 !important;
+  }
+  .z-lg-3 {
+    z-index: 3 !important;
+  }
+  .z-lg-4 {
+    z-index: 4 !important;
+  }
+  .z-lg-5 {
+    z-index: 5 !important;
+  }
   .opacity-lg-0 {
     opacity: 0 !important;
   }
@@ -16371,12 +16452,12 @@ fieldset:disabled .btn {
   .letterSpace-lg-32 {
     letter-spacing: 32px !important;
   }
-  .writing-lg-rl {
+  .vertical-lg-rl {
     -webkit-writing-mode: vertical-rl !important;
         -ms-writing-mode: tb-rl !important;
             writing-mode: vertical-rl !important;
   }
-  .writing-lg-lr {
+  .vertical-lg-lr {
     -webkit-writing-mode: vertical-lr !important;
         -ms-writing-mode: tb-lr !important;
             writing-mode: vertical-lr !important;
@@ -17776,6 +17857,21 @@ fieldset:disabled .btn {
   .text-xl-center {
     text-align: center !important;
   }
+  .z-xl-1 {
+    z-index: 1 !important;
+  }
+  .z-xl-2 {
+    z-index: 2 !important;
+  }
+  .z-xl-3 {
+    z-index: 3 !important;
+  }
+  .z-xl-4 {
+    z-index: 4 !important;
+  }
+  .z-xl-5 {
+    z-index: 5 !important;
+  }
   .opacity-xl-0 {
     opacity: 0 !important;
   }
@@ -17906,12 +18002,12 @@ fieldset:disabled .btn {
   .letterSpace-xl-32 {
     letter-spacing: 32px !important;
   }
-  .writing-xl-rl {
+  .vertical-xl-rl {
     -webkit-writing-mode: vertical-rl !important;
         -ms-writing-mode: tb-rl !important;
             writing-mode: vertical-rl !important;
   }
-  .writing-xl-lr {
+  .vertical-xl-lr {
     -webkit-writing-mode: vertical-lr !important;
         -ms-writing-mode: tb-lr !important;
             writing-mode: vertical-lr !important;
@@ -19311,6 +19407,21 @@ fieldset:disabled .btn {
   .text-xxl-center {
     text-align: center !important;
   }
+  .z-xxl-1 {
+    z-index: 1 !important;
+  }
+  .z-xxl-2 {
+    z-index: 2 !important;
+  }
+  .z-xxl-3 {
+    z-index: 3 !important;
+  }
+  .z-xxl-4 {
+    z-index: 4 !important;
+  }
+  .z-xxl-5 {
+    z-index: 5 !important;
+  }
   .opacity-xxl-0 {
     opacity: 0 !important;
   }
@@ -19441,12 +19552,12 @@ fieldset:disabled .btn {
   .letterSpace-xxl-32 {
     letter-spacing: 32px !important;
   }
-  .writing-xxl-rl {
+  .vertical-xxl-rl {
     -webkit-writing-mode: vertical-rl !important;
         -ms-writing-mode: tb-rl !important;
             writing-mode: vertical-rl !important;
   }
-  .writing-xxl-lr {
+  .vertical-xxl-lr {
     -webkit-writing-mode: vertical-lr !important;
         -ms-writing-mode: tb-lr !important;
             writing-mode: vertical-lr !important;
@@ -19537,6 +19648,28 @@ fieldset:disabled .btn {
   /* 穿透上層 icon 以點擊下方按鈕 */
 }
 
+.more-deco {
+  position: relative;
+}
+
+.more-deco::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 34px;
+  background-color: #161A14;
+  top: 52%;
+  right: 0;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.more-deco:hover::after {
+  background-color: #738673;
+  width: 0;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -19570,7 +19703,8 @@ body {
 
 a {
   text-decoration: none;
-  color: #161A14;
+  color: inherit;
+  display: block;
 }
 
 img {
@@ -19635,13 +19769,21 @@ input[type="radio"] {
   font-family: 'Noto Serif TC', serif;
 }
 
+.text-dark-hover {
+  color: #161A14;
+}
+
+.text-dark-hover:hover {
+  color: #492E24;
+}
+
 .loading-overlay {
   position: fixed;
   top: 0;
   width: 100vw;
   height: 100vh;
   background-color: #F0F0F0;
-  z-index: 999;
+  z-index: 2000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
