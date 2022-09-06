@@ -5,9 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首頁 餅乾生產餡</title>
+    <title>鐵盒餅乾 商品內頁 餅乾生產餡</title>
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <!-- googleicon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- swiper -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
   <!-- wowjs -->
   <link rel="stylesheet" href="public/js/WOW-master/css/libs/animate.css">
     <link rel="stylesheet" href="./assets/style/all.css">
@@ -51,66 +59,74 @@
     <!-- main content start -->
     <main>
       
-<div class="loginpage wrap container">
-  <form class="login">
-    <h2 class="login-title">歡迎回來!</h2>
 
-    <input
-      class="input-primary input-login"
-      type="text"
-      name="account"
-      placeholder="請輸入Email "
-    />
+<div class="cookie-wrapper">
+    <h2 class="product-title">Cookie</h2>
+    <div class="product-container">
 
-    <input
-      class="input-primary input-login"
-      type="password"
-      name="password-login"
-      placeholder="請輸入密碼 "
-    />
+      <!-- ul>li*9>img+h5+p+button -->
+      <ul class="product-list">
+        <li class="product-item">
+          <a href="product-content.html"><img src="./assets/images/rectangel/slide.JPG" alt=""></a>
+          <h5>綜合夾餡餅乾(六入)</h5>
+          <p>NT$300</p>
+         
+          <a href="#" class="btn-primary">加入購物車</a>
+        </li>
+        <li class="product-item">
+          <a href="product-content.html"><img src="./assets/images/rectangel/choclate.jpg" alt=""></a>
+          <h5>單一口味夾餡餅乾</h5>
+          <p>NT$300</p>
+           <a href="#" class="btn-primary">加入購物車</a>
+        </li>
+        <li class="product-item">
+          <a href="product-content.html"><img src="./assets/images/rectangel/cheesenew.JPG" alt=""></a>
+          <h5>香辣起司條</h5>
+          <p>NT$280</p>
+           <a href="#" class="btn-primary">加入購物車</a>
+        </li>
+        <li class="product-item">
+          <a href="product-content.html"><img src="./assets/images/rectangel/newbanner正方形.jpg" alt=""></a>
+          <h5>綜合壓模餅乾</h5>
+          <p>NT$280</p>
+           <a href="#" class="btn-primary">加入購物車</a>
+        </li>
+        <li class="product-item">
+          <a href="product-content.html"><img src="./assets/images/rectangel/smile正方形.jpg" alt=""></a>
+          <h5>單一口味壓模餅乾</h5>
+          <p>NT$250</p>
+           <a href="#" class="btn-primary">加入購物車</a>
+        </li>
+        <li class="product-item">
+          <a href="product-content.html"><img src="./assets/images/rectangel/snow正方形.jpg" alt=""></a>
+          <h5>雪球餅乾</h5>
+          <p>NT$250</p>
+           <a href="#" class="btn-primary">加入購物車</a>
+        </li>
+        <li class="product-item"> 
+          <a href="product-content.html"><img src="./assets/images/rectangel/littelbag.JPG" alt=""></a>
+          <h5>精緻禮袋</h5>
+          <p>NT$300</p>
+           <a href="#" class="btn-primary">加入購物車</a>
+        </li>
+        <li class="product-item"> 
+          <a href="product-content.html"><img src="./assets/images/rectangel/woodbox.jpg" alt=""></a>
+          <h5 >紙盒禮盒</h5>
+          <p >NT$450</p>
+           <a href="#" class="btn-primary">加入購物車</a>
+        </li>
+        <li class="product-item">
+          <a href="product-content.html"><img src="./assets/images/rectangel/lightwood正方形.jpg" alt=""></a>
+          <h5>鐵盒餅乾</h5>
+          <p>NT$600</p>
+           <a href="#" class="btn-primary">加入購物車</a>
+        </li>
+       
+       
+      </ul>
+    </div>
 
-    <a href="#"><p class="forget">忘記你的密碼嗎？</p></a>
-    <button type="submit" class="btn-primary submit-btn">買餅乾囉！</button>
-    <button type="button" class="btn-primary facebook">Facebook登入</button>
-  </form>
-
-  <div class="line"></div>
-
-  <form class="login">
-    <h2 class="login-title">註冊會員</h2>
-    <label for="sign">
-      <input
-        class="input-primary input-login"
-        type="text"
-        name="account"
-        placeholder="請輸入Email "
-      />
-    </label>
-    <label for="sign">
-      <input
-        class="input-primary input-login"
-        type="password"
-        name="password"
-        placeholder="請輸入密碼(6到20英數字) "
-      />
-    </label>
-    <label for="sign">
-      <input
-        class="input-primary input-login"
-        type="password"
-        name="password"
-        placeholder="再次輸入密碼(6到20英數字) "
-      />
-    </label>
-
-    <a href="#">
-      <button type="submit" class="btn-primary submit-btn">註冊買餅</button>
-    </a>
-
-    <button type="button" class="btn-primary facebook">Facebook註冊</button>
-  </form>
-</div>
-
+  </div>
     </main>
      <!-- main content end -->
      <!-- footer start  -->
@@ -134,6 +150,8 @@
 <script src="./assets/js/vendors.js"></script>
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
  <!-- awsomeicon -->
  <script src="https://kit.fontawesome.com/147f962b26.js" crossorigin="anonymous"></script>
 
