@@ -35,6 +35,10 @@ $(document).ready(function () {
     $(this).parent().siblings().find('.faq-list_title').removeClass('text-title_color');
     $(this).parent().siblings().find('.btn-faq').removeClass('open');
   });
+  $('#btn__login--base').on('click', function () {
+    $('.login__success').addClass('open');
+    $('.login__default').addClass('open');
+  });
 }); // document ready end
 
 var swiper = new Swiper(".commentSwiper", {
