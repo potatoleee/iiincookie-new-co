@@ -34,37 +34,25 @@ $(document).ready(function () {
     $(this).parent().siblings().find('.faq-list_p').slideUp();
     $(this).parent().siblings().find('.faq-list_title').removeClass('text-title_color');
     $(this).parent().siblings().find('.btn-faq').removeClass('open');
-  }); //每一次縮放視窗的時候執行
-
-  $(window).resize(function () {
-    gsapAnimate();
   });
-
-  function gsapAnimate() {
-    if ($(window).width() >= 768) {
-      $(window).scroll(function () {
-        offsetTop = $(window).scrollTop(); // console.log(offsetTop/10)
-        //x:“偏移”,“時間：數字越大呈現時間越久"
-
-        gsap.to(".about-text", {
-          y: -offsetTop / 5,
-          duration: 1
-        });
-      }); //scroll end
-    } else {
-      $(window).scroll(function () {
-        offsetTop = $(window).scrollTop(); // console.log(offsetTop/10)
-        //x:“偏移”,“時間：數字越大呈現時間越久"
-
-        gsap.to(".about-text", {
-          y: -offsetTop / 6,
-          duration: 1
-        });
-      }); //scroll end
-    }
-  } //要在外面才可以執行
-
-
-  gsapAnimate();
 }); // document ready end
+
+var swiper = new Swiper(".commentSwiper", {
+  slidesPerView: 1,
+  // 倒底會回第一張
+  loop: true,
+  // 有fade效果才不會整張切換
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
+});
 //# sourceMappingURL=all.js.map
