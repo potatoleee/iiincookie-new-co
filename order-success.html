@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首頁 餅乾生產餡</title>
+    <title>結帳成功  餅乾生產餡</title>
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <!-- googleicon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- swiper -->
     <link
   rel="stylesheet"
@@ -46,7 +47,9 @@
           <a class=" py-6  " href="about.html">關於iiin</a>
           <a class=" py-6  " href="faq.html">FAQ</a>
           <a class=" py-6  " href="custom.html">鐵盒訂製</a>
-          <a class=" py-6  " href="login.html"><img src="./assets/images/account.svg" alt=""></a>
+          <a class=" py-6 login__default " href="login.html"><img src="./assets/images/account.svg" alt=""></a>
+          <a class=" py-6 w-8n object-cove login__success" href="login.html"><img class=" rounded-circle" src="./assets/images/avator01.jpg" alt=""></a>
+          
          </div>
          <a class=" py-6 "  href="shoppingcart.html" class="nav-content_cart"alt=""><img src="./assets/images/icon-cart.svg" alt="">
           
@@ -58,28 +61,43 @@
     <!-- header  end-->
     <!-- main content start -->
     <main>
-      
-<div class=" about wrap container">
-    <div class="about-main">
-    <div class="about-text">
-        <h2>關於iiin</h2>
-        <p>製造夾餡餅乾的過程一個步驟接著一個步驟，很像製造的生產線，藉此取了諧音＿餅乾生產餡。並在Logo右下角放上招牌栗子造型～
+      <div class="container my-md-10 my-8">
+<div>
+    <div class="row justify-content-center">
+        <!-- 中間灰線 -->
+        <div class="col-9 col-md-7 timeLine timeLine__100 ">
 
-        </p>
-            <p>英文名稱的小巧思：iiin跟男友兩位名字都有穎，以英文諧音in為發想，覺得三個i有拉長音可愛的感覺，所以唸法為「穎～穎～cookie 」。
-            </p>
-            <p>
-            不是本科系的iiin，對烘焙跟攝影方面非常有興趣，身為男友的我便鼓勵她，發展成為副業吧！我也會在旁學習，一起幫忙她的。</p>
-            <p>
-             未來會繼續慢慢開創新口味，請多多指教！
-            </p>
-      
+        </div>
     </div>
-    <img src="./assets/images/fan.JPG "alt="">
-    
+    <div class="row mt-6 mb-7">
+        <div class=" col-3 col-md-5">
+            <div class="text-center step step__1 active ">
+                商品資料確認
+            </div>
+        </div>
+        <div class=" col-6 col-md-2">
+            <div class="text-center step step__2 active">
+                信用卡付款
+            </div>
+        </div>
+        <div class=" col-3 col-md-5">
+            <div class="text-center step step__3 active">
+                付款完成
+            </div>
+        </div>
     </div>
+
+    <h2 class="fs-3 fw-medium font-serifTc text-center mb-7 letterSpace-4">完成訂購！</h2>
+    <p class="text-center letterSpace-2">感謝您的訂購，我們會盡快出貨，希望你會喜歡，如有任何疑問可私訊我們～</p>
+    <img class="w-30 mx-auto" src="./assets/images/paysuccess.png" alt="">
+    <div class="d-flex justify-content-end">
+        <a class="btn btn-primary" href="index.html">回首頁</a>
+    </div>
+   
+</div>
 
 </div>
+
     </main>
      <!-- main content end -->
      <!-- footer start  -->
@@ -110,8 +128,8 @@
 
 <!-- gsap -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-<!-- wow -->
-<script src="public/js/WOW-master/dist/wow.min.js"></script>
+<!-- aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <!-- main js -->
 <script src="./assets/js/all.js"></script>

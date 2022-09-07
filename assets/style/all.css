@@ -21311,7 +21311,7 @@ input[type="radio"] {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: #161A14;
+  background-color: #e3e3e3;
   z-index: 3;
   font-size: 12px;
   line-height: 1;
