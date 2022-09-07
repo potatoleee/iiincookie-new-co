@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鐵盒餅乾 商品內頁 餅乾生產餡</title>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <!-- googleicon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- swiper -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+  <!-- wowjs -->
+  <link rel="stylesheet" href="public/js/WOW-master/css/libs/animate.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+      <!-- loading start -->
+   <div class="loading-overlay">
+    <div class="loading-logo">
+      <img src="./assets/images/logo.svg" alt="">
+    </div>
+
+  </div>
+  <!-- loading end -->
+   <!-- header start -->
+    <header class="fixed-top bg-light">
+      <nav>
+        <div class=" d-flex justify-content-between align-items-center container-xxl">
+          <div class="btn-burger"></div>
+          <div class="logo pos-absolute pos-md-static top-50 start-50  translate-middle translate-middle-md-none ">
+            <h1 class="py-5" >
+              <a href="index.html">餅乾生產餡 iiincookie</a>
+            </h1>
+          </div>
+       <div class="nav__content d-flex">
+        <div class="nav__content__main  me-7 gap-md-7 flex-column flex-md-row align-items-center bg-light pos-fixed pos-md-static top-0 start-0 w-100 vh-100 vh-md-auto gap-8  justify-content-center">
+          <a class=" py-6  " href="product.html">商品</a>
+          <a class=" py-6  " href="about.html">關於iiin</a>
+          <a class=" py-6  " href="faq.html">FAQ</a>
+          <a class=" py-6  " href="custom.html">鐵盒訂製</a>
+          <a class=" py-6  " href="login.html"><img src="./assets/images/account.svg" alt=""></a>
+         </div>
+         <a class=" py-6 "  href="shoppingcart.html" class="nav-content_cart"alt=""><img src="./assets/images/icon-cart.svg" alt="">
+          
+         </a>
+        </div>
+       
+      </nav>  
+    </header>
+    <!-- header  end-->
+    <!-- main content start -->
+    <main>
+      
+
+<div class="wrap container">
+    <h2 class="order-title">結帳吃餅乾</h2>
+  <div class="shopping-main">
+    <form class="order">
+      <h4>訂單資訊</h4>
+      <label class="label-order"for="name">姓名<span>*</span></label>
+      <input class="input-primary input-order " type="text" name="name" id="order" placeholder="例:李餅乾">
+
+      <label class="label-order" for="phone">聯絡電話<span>*</span></label>
+      <input class="input-primary input-order"type="phone" name="phone" id="order" placeholder="例:0912-333-456">
+
+      <label class="label-order" for="email">電子郵件<span>*</span></label>
+      <input class="input-primary input-order"type="email" name="name" id="order"  placeholder="例:iiincookie@gmail.com">
+
+      <label class="label-order" for="address">寄送地址<span>*</span></label>
+      <input class="input-primary input-order input-delivery" type="text" name="address" id="order"  placeholder="例:台中市台灣大道一段999號">
+      <!-- 訂單資訊上半 -->
+       <!-- 運送方式 start-->
+       <div class="radio-order">
+       <p>運送方式</p>
+      <ul >
+        <li class="radio-list">  
+          <input type="radio" name="delivery" id="selfPick">
+          <label for="selfPick">自行取貨</label>
+        </li>
+      
+        <li>  
+          <input type="radio" name="delivery" id="homeDelivery" checked>
+          <label for="honeDelivery">宅配 NT$130 </label>
+        </li>
+      </ul>
+    </div>
+      <!--運送方式 end-->
+      <!-- 付款方式 start-->
+      <div class="radio-order">
+        <p>付款方式</p>
+       <ul >
+         <li  class="radio-list" >  
+           <input type="radio" name="pay" id="credit" checked>
+           <label for="credit">信用卡</label>
+         </li>
+       
+         <li>  
+           <input type="radio" name="pay" id="atm" >
+           <label for="atm">ATM/網銀匯款</label>
+         </li>
+       </ul>
+     </div>
+        <!-- 付款方式 end-->
+
+      <p class="safe">下一步將連至第三方金流服務進行刷卡，你所有的交易資訊皆獲得安全保護。</p>
+      <button type="submit" class="btn-primary btn-order">付款</button>
+    </form>
+
+    <!-- 購物車start -->
+    <form class="cart">
+      <div class="backToProduct">
+        <a href="product.html"><img src="./assets/images/icon-arrow.svg" alt=""></a>
+        <a href="product.html">還有想購買的物品嗎？</a>
+      </div>
+      
+      <h4 class="cart-title">購物車</h4>
+      <div class="line-cart"></div>
+      <!-- 購物車產品區start -->
+      <ul class="cart-list">
+        <li class="cart-item">
+          <img src="./assets/images/rectangel/choclate.jpg" alt="">
+          <div class="item-main">
+              <div class="item-name">
+                  <p>伯爵巧克力夾餡(六入)</p>
+                  <img src="./assets/images/icon-close.svg" alt="">
+              </div>
+              <div class="item-price">
+                  <p>NT$350</p>
+                  <input class="number-cart" type="number" value="1" >
+              </div>
+          </div>
+        </li>
+       
+        <li class="cart-item">
+          <img src="./assets/images/rectangel/lightwood正方形.jpg" alt="">
+          <div class="item-main">
+              <div class="item-name">
+                  <p>中型鐵盒餅乾</p>
+                  <img src="./assets/images/icon-close.svg" alt="">
+              </div>
+              <div class="item-price">
+                  <p>NT$350</p>
+                  <input class="number-cart" type="number"  value="1" >
+              </div>
+          </div>
+        </li>
+        
+        
+      </ul>
+           <!-- 購物車產品區 end -->
+      
+      <ul class="cost">
+        <li class="subTotal">
+          <p>小計</p>
+          <p>NT$700</p>
+        </li>
+        <li class="deliveryFree">
+          <p>運費</p>
+          <p>NT$130</p>
+        </li>
+        <li class="total">
+          <p>總計</p>
+          <p>NT$830</p>
+        </li>
+      </ul>
+
+    
+
+    </form>
+
+  </div>
+ </div>
+    </main>
+     <!-- main content end -->
+     <!-- footer start  -->
+     <footer>
+      <div class="container">
+        <div class="footer-content d-flex justify-content-between align-items-end py-7">
+          <div>
+            <a class=" light-hover transition-5s fs-8 font-serifTc d-flex gap-4 mb-4 mb-md-6" href="https://www.instagram.com/iiin.cookies/" target="_blank" class="instagram">
+              <img src="./assets/images/icon-ig.svg" alt="">
+              instagram
+            </a>
+            <p class="fs-8 text-light  font-serifTc">Copyright © 2022 餅乾生產餡.</p>
+          </div>
+          <p class="pagetop pe-2 light-hover font-serifTc pos-relative cursor-pointer">page top</p>
+        </div>
+      </div>
+    </footer>
+       <!-- footer end  --> 
+
+<!-- bs js -->
+<script src="./assets/js/vendors.js"></script>
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+ <!-- awsomeicon -->
+ <script src="https://kit.fontawesome.com/147f962b26.js" crossorigin="anonymous"></script>
+
+<!-- gsap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<!-- wow -->
+<script src="public/js/WOW-master/dist/wow.min.js"></script>
+
+<!-- main js -->
+<script src="./assets/js/all.js"></script>
+</body>
+
+</html>
