@@ -105,10 +105,35 @@ $(document).ready(function () {
         });
       }); //scroll end
     }
+  }
+
+  function gsapAnimate2() {
+    if ($(window).width() >= 768) {
+      $(window).on('scroll', function () {
+        var offsetTop = $(window).scrollTop(); // console.log(offsetTop/10)
+        //x:“偏移”,“時間：數字越大呈現時間越久"
+
+        gsap.to(".scrolling2", {
+          y: -offsetTop / 10,
+          duration: 1
+        });
+      }); //scroll end
+    } else {
+      $(window).on('scroll', function () {
+        var offsetTop = $(window).scrollTop(); // console.log(offsetTop/10)
+        //x:“偏移”,“時間：數字越大呈現時間越久"
+
+        gsap.to(".scrolling2", {
+          y: -offsetTop / 10,
+          duration: 1
+        });
+      }); //scroll end
+    }
   } //要在外面才可以執行
 
 
   gsapAnimate();
+  gsapAnimate2();
 }); // document ready end
 
 var swiper = new Swiper(".commentSwiper", {
@@ -128,5 +153,9 @@ var swiper = new Swiper(".commentSwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   }
+}); // datepicker
+
+var elem = document.querySelector('input[name="foo"]');
+var datepicker = new Datepicker(elem, {// ...options
 });
 //# sourceMappingURL=all.js.map
