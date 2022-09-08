@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <!-- swiper -->
     <link
   rel="stylesheet"
@@ -50,8 +51,8 @@
           <a class=" py-6 w-8n object-cove login__success" href="login.html"><img class=" rounded-circle" src="./assets/images/avator01.jpg" alt=""></a>
           
          </div>
-         <a class=" py-6 d-none"  href="shoppingcart.html" class="nav-content_cart"alt=""><img src="./assets/images/icon-cart.svg" alt="">
-         </a>
+         <!-- <a class=" py-6 d-none"  href="shoppingcart.html" class="nav-content_cart"alt=""><img src="./assets/images/icon-cart.svg" alt="">
+         </a> -->
 
          <a class=" py-6 " data-bs-toggle="offcanvas" href="#offcanvasRight" class=" nav-content_cart" alt=""
          role="button" 
@@ -59,8 +60,8 @@
          </a>
          
         </div>
-    
-<div class="offcanvas offcanvas-end w-80n bg-light-gray" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <!--購物車側欄  -->
+<div class="offcanvas offcanvas-end bg-light-gray" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
     <h4 class="fs-4">購物車預覽</h4>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -93,10 +94,11 @@
     </ul>
     <div class="d-flex justify-content-between align-items-center">
       <p>NT$950</p>
-      <a class="btn btn-primary py-2 px-7"href="product.html">來結帳囉</a>
+      <a class="btn btn-primary py-2 px-7" href="shoppingcart.html">來結帳囉</a>
     </div>
 </div>
 </div>
+   <!--購物車側欄  -->
        
       </nav>  
     </header>
@@ -106,7 +108,8 @@
       
    
     <!-- banner start -->
-    <div class="banner orign wow fadeIn">
+    <div class="banner orign"data-aos="fade"
+    data-aos-duration="2000" data-aos-delay="2000">
         <div class=" pos-absolute top-20p end-12p   vertical-rl">
             <h2 class=" fs-md-1 fs-3 ms-6 fw-medium  letterSpace-32 text-light banner-text_title font-serifTc ">餅乾生產餡</h2>
             <h2 class=" fs-md-2 fs-4 fw-medium letterSpace-16   text-light  font-serifTc banner__text ">呈現最驚豔的味</h2>
@@ -115,15 +118,15 @@
     <!-- banner end-->
 
     <!-- 緣起介紹 start-->
-    <div class="container my-md-13 my-10">
-        <div class="row justify-content-center mb-12">
+    <div class="container my-md-13 my-10" >
+        <div class="row justify-content-center mb-12" data-aos="fade">
             <div class="col-md-10 col-12 d-flex flex-row-reverse justify-content-center gap-4 gap-md-10  ">
                 <div class="d-flex gap-1">
                     <h3 class="fs-3 fs-md-2 font-serifTc   vertical-rl  letterSpace-4 ">緣起</h3>
                     <p class="fs-md-6 fs-8 fw-light  vertical-rl letterSpace-2 text-indent-3 ">origin</p>
                 </div>
 
-                <p class=" fs-7 fs-md-6  vertical-rl lh-2 lh-md-3 letterSpace-4 font-serifTc">
+                <p class=" fs-7 fs-md-6  vertical-rl lh-2 lh-md-3 letterSpace-4 font-serifTc" >
                     因緣際會幫忙朋友製作了餅乾，<br>
                     變想要挑戰鐵盒餅乾，<br>
                     朋友一吃驚艷，鼓勵我讓大家也能，<br>
@@ -139,7 +142,8 @@
         <div class="row justify-content-center">
             <div class="col-md-8 col-12">
                 <a href="about.html">
-                    <img src="./assets/images/boxflower.JPG" alt="">
+                    <img src="./assets/images/boxflower.JPG" alt="" data-aos="fade-up"
+                    data-aos-duration="2000">
                 </a>
                
             </div>    
@@ -151,7 +155,7 @@
     <!-- 口味start -->
     <div   class="container-fluid p-lg-0 my-md-13 my-10 bg-light-gray py-10">
         <div class="row w-auto  w-lg-90  align-items-lg-center flex-column-reverse flex-lg-row">
-            <div class="col-12 col-lg-9">
+            <div class="col-12 col-lg-9"  >
                 <ul class="row g-0">
                     <!-- 口味1 start-->
                     <li class="col-md-6 pos-relative  ">
