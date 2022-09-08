@@ -9471,6 +9471,10 @@ fieldset:disabled .btn {
   top: 40% !important;
 }
 
+.top-30p {
+  top: 30% !important;
+}
+
 .top-50 {
   top: 50% !important;
 }
@@ -9545,6 +9549,10 @@ fieldset:disabled .btn {
 
 .bottom-40p {
   bottom: 40% !important;
+}
+
+.bottom-30p {
+  bottom: 30% !important;
 }
 
 .bottom-50 {
@@ -9623,6 +9631,10 @@ fieldset:disabled .btn {
   left: 40% !important;
 }
 
+.start-30p {
+  left: 30% !important;
+}
+
 .start-50 {
   left: 50% !important;
 }
@@ -9697,6 +9709,10 @@ fieldset:disabled .btn {
 
 .end-40p {
   right: 40% !important;
+}
+
+.end-30p {
+  right: 30% !important;
 }
 
 .end-50 {
@@ -21071,7 +21087,6 @@ img {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, ul, ol, p {
   margin: 0;
-  line-height: 1.2;
 }
 
 ol,
