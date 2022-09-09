@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>會員專區 餅乾生產餡</title>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <!-- googleicon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- datepicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- swiper -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+  
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+      <!-- loading start -->
+   <div class="loading-overlay">
+    <div class="loading-logo">
+      <img src="./assets/images/logo.svg" alt="">
+    </div>
+
+  </div>
+  <!-- loading end -->
+   <!-- header start -->
+    <header class="fixed-top bg-light">
+      <nav>
+        <div class=" d-flex justify-content-between align-items-center container-xxl">
+          <div class="btn-burger"></div>
+          <div class="logo pos-absolute pos-md-static top-50 start-50  translate-middle translate-middle-md-none ">
+            <h1 class="py-5" >
+              <a href="index.html">餅乾生產餡 iiincookie</a>
+            </h1>
+          </div>
+       <div class="nav__content d-flex">
+        <div class="nav__content__main  me-7 gap-md-7 flex-column flex-md-row align-items-center bg-light pos-fixed pos-md-static top-0 start-0 w-100 vh-100 vh-md-auto gap-8  justify-content-center">
+          <a class=" py-6  " href="product.html">商品</a>
+          <a class=" py-6  " href="about.html">關於iiin</a>
+          <a class=" py-6  " href="faq.html">FAQ</a>
+          <a class=" py-6  " href="custom.html">鐵盒訂製</a>
+          <a class=" py-6 login__default " href="login.html"><img src="./assets/images/account.svg" alt=""></a>
+          <a class=" py-6 w-8n object-cove login__success" href="login.html"><img class=" rounded-circle" src="./assets/images/avator01.jpg" alt=""></a>
+          
+         </div>
+         <!-- <a class=" py-6 d-none"  href="shoppingcart.html" class="nav-content_cart"alt=""><img src="./assets/images/icon-cart.svg" alt="">
+         </a> -->
+
+         <a class=" py-6 " data-bs-toggle="offcanvas" href="#offcanvasRight" class=" nav-content_cart" alt=""
+         role="button" 
+         aria-controls=" offcanvasRight "><img src="./assets/images/icon-cart.svg" alt="">
+         </a>
+         
+        </div>
+    <!--購物車側欄  -->
+<div class="offcanvas offcanvas-end bg-light-gray" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h4 class="fs-4">購物車預覽</h4>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul>
+        <li class="d-flex border-bottom border-black-10 py-6 gap-2">
+          <span class="material-symbols-outlined cursor-pointer">
+            close
+            </span>
+          <img class="w-20 object-cove" src="./assets/images/rectangel/choclate.jpg" alt="">
+          <div>
+            <p class="mb-2">伯爵巧克力夾餡(6入）</p>
+            <p class="mb-2">x1</p>
+            <p>NT$350</p>
+          </div>
+        </li>
+        <li class="d-flex border-bottom border-black-10 py-6 gap-2 mb-4">
+          <span class="material-symbols-outlined cursor-pointer">
+            close
+            </span>
+          <img class="w-20 object-cove" src="./assets/images/rectangel/lightwood正方形.jpg" alt="">
+          <div>
+            <p class="mb-2">鐵盒禮盒</p>
+            <p class="mb-2">x1</p>
+            <p>NT$600</p>
+          </div>
+      
+        </li>
+    </ul>
+    <div class="d-flex justify-content-between align-items-center">
+      <p>NT$950</p>
+      <a class="btn btn-primary py-2 px-7" href="shoppingcart.html">來結帳囉</a>
+    </div>
+</div>
+</div>
+   <!--購物車側欄  -->
+       
+      </nav>  
+    </header>
+    <!-- header  end-->
+    <!-- main content start -->
+    <main>
+      
+<div class="container my-md-10 my-8">
+    <!-- 切換nav start -->
+    <a href="#" class="btn btn-primary mb-7">登出</a> 
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item w-25" role="presentation">
+          <button class="nav-link active w-100" id="info-tab" data-bs-toggle="tab" data-bs-target="#member__info" type="button" role="tab" aria-controls="home" aria-selected="true">個人資訊</button>
+        </li>
+
+          <li class="nav-item  w-25" role="presentation">
+            <button class="nav-link w-100 " id="oreder-tab" data-bs-toggle="tab" data-bs-target="#member__order" type="button" role="tab" aria-controls="profile" aria-selected="false">訂單</button>
+          </li>
+        
+        <li class="nav-item  w-25" role="presentation">
+          <button class="nav-link w-100 " id="coupon-tab" data-bs-toggle="tab" data-bs-target="#member__coupon" type="button" role="tab" aria-controls="contact" aria-selected="false">購物金</button>
+        </li>
+        <li class="nav-item  w-25" role="presentation">
+            <button class="nav-link w-100 " id="message-tab" data-bs-toggle="tab" data-bs-target="#member__message" type="button" role="tab" aria-controls="contact" aria-selected="false">訊息</button>
+          </li>
+          
+    </ul>
+    <!-- 切換nav end -->
+
+      <!-- 切換內容 start -->
+      <div class="tab-content border border-top-0  p-6" id="myTabContent">
+        <div class="tab-pane fade show active" id="member__info" role="tabpanel" aria-labelledby="info-tab">
+            <div class="d-flex align-items-center gap-2 mb-8">
+                <span class="material-symbols-outlined">
+                    person
+                    </span>
+                <p>李東穎</p>
+                <p class="bg-primary p-1 px-2 text-light">一般會員</p>
+
+            </div>
+            <div class="d-flex gap-2 mb-5">
+                <span class="material-symbols-outlined">
+                    edit
+                    </span>
+                <p>編輯會員資料</p>                    
+            </div>
+
+            <form>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="mb-5">
+                            <label class="fs-8 font-serifTc mb-1" for="member__name ">姓名</label>
+                           <input class="form-control bg-light border-black-30 py-2 px-4" type="text" name="member__name" id="member__name" value="李東穎">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-5">
+                            <label class="fs-8 font-serifTc mb-1" for="custom__email ">電子郵件<span class="text-danger">*</span></label>
+                        <input class="form-control bg-light border-black-30 py-2 px-4" type="text" name="custom__email" id="custom__email" value="dean1990226@gmail.com">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-5">
+                            <label class="fs-8 font-serifTc mb-1" for="member__phone ">電話號碼（選填）</label>
+                           <input class="form-control bg-light border-black-30 py-2 px-4" type="text" name="member__phone" id="member__phone" value="0939914514">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-5">
+                            <label class="fs-8 font-serifTc mb-1" for="member__address ">送貨地址（選填）</label>
+                           <input class="form-control bg-light border-black-30 py-2 px-4" type="text" name="member__address" id="member__address" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mb-5">
+                            <label for="member__password__now" class="fs-8 font-serifTc mb-1">目前密碼</label>
+                            <div class="d-flex pos-relative">
+
+                                <input type="password" class="form-control bg-light border-black-30 py-2 px-4 " id="member__password__now"  name="member__password__now" value="iii7777 ">
+                                <span class="material-symbols-outlined pos-absolute end-16 top-50 translate-middle-y cursor-pointer">
+                                    visibility
+                                    </span>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mb-5">
+                            <label for="member__password__new" class="fs-8 font-serifTc mb-1">新密碼（不需變更請留空）</label>
+                            <div class="d-flex pos-relative">
+
+                                <input type="password" class="form-control bg-light border-black-30 py-2 px-4 " id="member__password__new"  name="member__password__new" placeholder="不需變更請留空">
+                                <span class="material-symbols-outlined pos-absolute end-16 top-50 translate-middle-y cursor-pointer">
+                                    visibility
+                                    </span>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mb-5">
+                            <label for="member__password__new--check" class="fs-8 font-serifTc mb-1">確認新密碼</label>
+                            <div class="d-flex pos-relative">
+
+                                <input type="password" class="form-control bg-light border-black-30 py-2 px-4 " id="member__password__new--check"  name="member__password__new--check"  placeholder="不需變更請留空">
+                                <span class="material-symbols-outlined pos-absolute end-16 top-50 translate-middle-y cursor-pointer">
+                                    visibility
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-8 mb-5">
+                        <p>帳戶綁定</p>
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="d-flex gap-1 align-items-center">
+                                <i class="fa-brands fa-facebook text-fb fs-6"></i>
+                                <p class="text-fb fs-6">Facebook</p>
+                            </div>
+                            <img class=" rounded-circle w-8n h-8n object-cover" src="./assets/images/avator01.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end gap-6">
+                        <button type="button" class="btn btn-outline-dark">取消</button>
+                        <button type="button" class="btn btn-primary">儲存變更</button>
+                    </div>
+                </div>
+            </form>
+                
+        </div>
+        <div class="tab-pane fade" id="member__order" role="tabpanel" aria-labelledby="order-tab">2</div>
+        <div class="tab-pane fade" id="member__coupon" role="tabpanel" aria-labelledby="coupon-tab">3</div>
+        <div class="tab-pane fade" id="member__message" role="tabpanel" aria-labelledby="message-tab">4</div>
+      </div>
+       <!-- 切換內容 end -->
+
+
+</div>
+
+    </main>
+     <!-- main content end -->
+     <!-- footer start  -->
+     <footer>
+      <div class="container">
+        <div class="footer-content d-flex justify-content-between align-items-end py-7">
+          <div>
+            <a class=" light-hover transition-5s fs-8 font-serifTc d-flex gap-4 mb-4 mb-md-6" href="https://www.instagram.com/iiin.cookies/" target="_blank" class="instagram">
+              <img src="./assets/images/icon-ig.svg" alt="">
+              instagram
+            </a>
+            <p class="fs-8 text-light  font-serifTc">Copyright © 2022 餅乾生產餡.</p>
+          </div>
+          <p class="pagetop pe-2 light-hover font-serifTc pos-relative cursor-pointer">page top</p>
+        </div>
+      </div>
+    </footer>
+       <!-- footer end  --> 
+
+<!-- bs js -->
+<script src="./assets/js/vendors.js"></script>
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+ <!-- awsomeicon -->
+ <script src="https://kit.fontawesome.com/147f962b26.js" crossorigin="anonymous"></script>
+<!-- datepicker -->
+<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+
+<!-- gsap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<!-- aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- main js -->
+<script src="./assets/js/all.js"></script>
+</body>
+
+</html>
