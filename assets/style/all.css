@@ -21567,7 +21567,7 @@ header {
   margin: auto;
   color: transparent;
   background: #492E24;
-  height: 2px;
+  height: 1px;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
@@ -21612,18 +21612,6 @@ header {
   .nav__content__main a.open {
     display: block;
   }
-}
-
-.login__default.open {
-  display: none;
-}
-
-.login__success {
-  display: none;
-}
-
-.login__success.open {
-  display: block;
 }
 
 footer {
