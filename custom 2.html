@@ -17,8 +17,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
-  <!-- wowjs -->
-  <link rel="stylesheet" href="public/js/WOW-master/css/libs/animate.css">
+  
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -51,10 +50,53 @@
           <a class=" py-6 w-8n object-cove login__success" href="login.html"><img class=" rounded-circle" src="./assets/images/avator01.jpg" alt=""></a>
           
          </div>
-         <a class=" py-6 "  href="shoppingcart.html" class="nav-content_cart"alt=""><img src="./assets/images/icon-cart.svg" alt="">
-          
+         <a class=" py-6 d-none"  href="shoppingcart.html" class="nav-content_cart"alt=""><img src="./assets/images/icon-cart.svg" alt="">
          </a>
+
+         <a class=" py-6 " data-bs-toggle="offcanvas" href="#offcanvasRight" class=" nav-content_cart" alt=""
+         role="button" 
+         aria-controls=" offcanvasRight "><img src="./assets/images/icon-cart.svg" alt="">
+         </a>
+         
         </div>
+    
+<div class="offcanvas offcanvas-end w-80n bg-light-gray" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h4 class="fs-4">購物車預覽</h4>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul>
+        <li class="d-flex border-bottom border-black-10 py-6 gap-2">
+          <span class="material-symbols-outlined cursor-pointer">
+            close
+            </span>
+          <img class="w-20 object-cove" src="./assets/images/rectangel/choclate.jpg" alt="">
+          <div>
+            <p class="mb-2">伯爵巧克力夾餡(6入）</p>
+            <p class="mb-2">x1</p>
+            <p>NT$350</p>
+          </div>
+        </li>
+        <li class="d-flex border-bottom border-black-10 py-6 gap-2 mb-4">
+          <span class="material-symbols-outlined cursor-pointer">
+            close
+            </span>
+          <img class="w-20 object-cove" src="./assets/images/rectangel/lightwood正方形.jpg" alt="">
+          <div>
+            <p class="mb-2">鐵盒禮盒</p>
+            <p class="mb-2">x1</p>
+            <p>NT$600</p>
+          </div>
+      
+        </li>
+    </ul>
+    <div class="d-flex justify-content-between align-items-center">
+      <p>NT$950</p>
+      <a class="btn btn-primary py-2 px-7"href="product.html">來結帳囉</a>
+    </div>
+</div>
+</div>
        
       </nav>  
     </header>
@@ -62,31 +104,31 @@
     <!-- main content start -->
     <main>
       
-<div class="wrap container">
-    <div class="faq">
-    <h2 class="faq-title">FAQ</h2>
-        <ul class="faq-content">
-            <li class="faq-list">
-                    <p class="faq-list_title">開封後可以保存多久呢？ <button class="btn-faq"></button>
-                    </p>
-                <p class="faq-list_p">開封後請冰冰箱喔～建議一個月內食用完畢。</p>
-            </li>
 
-            <li class="faq-list">
-                <p class="faq-list_title">寄送方式 
-                    <button class="btn-faq"></button>
-                </p>
-            <p class="faq-list_p">可以面交時間為平日晚上7點至8點，地點:7-11東富門市，以及冷凍宅配。</p>
-        </li>
-
-        <li class="faq-list">
-            <p class="faq-list_title">鐵盒訂製有數量限制嗎？
-                <button class="btn-faq"></button>
-            </p>
-        <p class="faq-list_p">最低從8盒開始喔～</p>
-    </li>
-
-        </ul>
+<div class="wrap">
+    <div class="custom-bg">
+            <div class="custom-pic custom-container">
+                <h3 class="custom-title">鐵盒訂制</h3>
+                <img  class="wow fadeIn" src="./assets/images/boxflower.JPG" alt="">
+             </div>
+    </div>
+    <div class="custom-content custom-container">
+        <div class="custom-text">
+            <h4 class="custom-text_main">如有節日、喜餅客製化、大量需求，皆可私訊討論內容物及包裝～期待來信。 </h4>
+          <a href="https://www.instagram.com/iiin.cookies/" target="_blank">instagram:iiin_cookie</a>
+          </div>
+        <div class="custom-content_form">
+            <form class="custom-form">
+                <label for="custom">目的</label>
+                <input class="input-primary" type="text" name="purposre" placeholder="收涎/喜餅">
+            </form>
+            <form class="custom-form">
+                <label for="custom">數量</label>
+                <input class="input-primary"type="text" name="amount" placeholder="15盒">
+            </form>
+            <button type="submit " class="btn-primary btn-custom">提交</button>
+                <!-- <input  class="btn-primary btn-custom" type="submit" value="提交"> -->
+         </div>
     </div>
 </div>
     </main>

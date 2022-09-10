@@ -17,8 +17,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
-  <!-- wowjs -->
-  <link rel="stylesheet" href="public/js/WOW-master/css/libs/animate.css">
+  
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -51,10 +50,53 @@
           <a class=" py-6 w-8n object-cove login__success" href="login.html"><img class=" rounded-circle" src="./assets/images/avator01.jpg" alt=""></a>
           
          </div>
-         <a class=" py-6 "  href="shoppingcart.html" class="nav-content_cart"alt=""><img src="./assets/images/icon-cart.svg" alt="">
-          
+         <a class=" py-6 d-none"  href="shoppingcart.html" class="nav-content_cart"alt=""><img src="./assets/images/icon-cart.svg" alt="">
          </a>
+
+         <a class=" py-6 " data-bs-toggle="offcanvas" href="#offcanvasRight" class=" nav-content_cart" alt=""
+         role="button" 
+         aria-controls=" offcanvasRight "><img src="./assets/images/icon-cart.svg" alt="">
+         </a>
+         
         </div>
+    
+<div class="offcanvas offcanvas-end w-80n bg-light-gray" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h4 class="fs-4">購物車預覽</h4>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul>
+        <li class="d-flex border-bottom border-black-10 py-6 gap-2">
+          <span class="material-symbols-outlined cursor-pointer">
+            close
+            </span>
+          <img class="w-20 object-cove" src="./assets/images/rectangel/choclate.jpg" alt="">
+          <div>
+            <p class="mb-2">伯爵巧克力夾餡(6入）</p>
+            <p class="mb-2">x1</p>
+            <p>NT$350</p>
+          </div>
+        </li>
+        <li class="d-flex border-bottom border-black-10 py-6 gap-2 mb-4">
+          <span class="material-symbols-outlined cursor-pointer">
+            close
+            </span>
+          <img class="w-20 object-cove" src="./assets/images/rectangel/lightwood正方形.jpg" alt="">
+          <div>
+            <p class="mb-2">鐵盒禮盒</p>
+            <p class="mb-2">x1</p>
+            <p>NT$600</p>
+          </div>
+      
+        </li>
+    </ul>
+    <div class="d-flex justify-content-between align-items-center">
+      <p>NT$950</p>
+      <a class="btn btn-primary py-2 px-7"href="product.html">來結帳囉</a>
+    </div>
+</div>
+</div>
        
       </nav>  
     </header>
@@ -62,54 +104,33 @@
     <!-- main content start -->
     <main>
       
+<div class="wrap container">
+    <div class="faq">
+    <h2 class="faq-title">FAQ</h2>
+        <ul class="faq-content">
+            <li class="faq-list">
+                    <p class="faq-list_title">開封後可以保存多久呢？ <button class="btn-faq"></button>
+                    </p>
+                <p class="faq-list_p">開封後請冰冰箱喔～建議一個月內食用完畢。</p>
+            </li>
 
-<div class="container-xxl  my-md-13 my-10">
-    <div class="row justify-content-center pos-relative">
-        <div class=" col-12 col-md-10 col-lg-8">
-            <div class="row justify-content-end flex-column-reverse flex-lg-row">
+            <li class="faq-list">
+                <p class="faq-list_title">寄送方式 
+                    <button class="btn-faq"></button>
+                </p>
+            <p class="faq-list_p">可以面交時間為平日晚上7點至8點，地點:7-11東富門市，以及冷凍宅配。</p>
+        </li>
 
-                <div class="col-lg-4 pos-md-static pos-lg-absolute start-24 offset-lg-2 top-12p">
-                    <div class="bg-secondary px-8 py-11 rounded-lg-3 rounded-bottom-3">
-                        <h2 class="font-serifTc fs-md-2 fs-3 mb-9 letterSpace-4">關於iiin</h2>
-                        <p class="mb-4 letterSpace-2">製造夾餡餅乾的過程一個步驟接著一個步驟，很像製造的生產線，藉此取了諧音＿餅乾生產餡。並在Logo右下角放上招牌栗子造型～ </p>
-                        <p class="mb-4 letterSpace-2">英文名稱的小巧思：iiin跟男友兩位名字都有穎，以英文諧音in為發想，覺得三個i有拉長音可愛的感覺，所以唸法為「穎～穎～cookie 」。
-                        </p>
-                        <p class="mb-4 letterSpace-2">
-                        不是本科系的iiin，對烘焙跟攝影方面非常有興趣，身為男友的我便鼓勵她，發展成為副業吧！我也會在旁學習，一起幫忙她的。</p>
-                        <p>
-                        未來會繼續慢慢開創新口味，請多多指教！
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-8 ">
-                    <img class="rounded-lg-3 rounded-top-3" src="./assets/images/fan.JPG "alt="">
-                </div>
-            </div>
-        </div>
+        <li class="faq-list">
+            <p class="faq-list_title">鐵盒訂製有數量限制嗎？
+                <button class="btn-faq"></button>
+            </p>
+        <p class="faq-list_p">最低從8盒開始喔～</p>
+    </li>
+
+        </ul>
     </div>
 </div>
-
-<!-- <div class=" about wrap container">
-    <div class="about-main">
-    <div class="about-text">
-        <h2>關於iiin</h2>
-        <p>製造夾餡餅乾的過程一個步驟接著一個步驟，很像製造的生產線，藉此取了諧音＿餅乾生產餡。並在Logo右下角放上招牌栗子造型～
-
-        </p>
-            <p>英文名稱的小巧思：iiin跟男友兩位名字都有穎，以英文諧音in為發想，覺得三個i有拉長音可愛的感覺，所以唸法為「穎～穎～cookie 」。
-            </p>
-            <p>
-            不是本科系的iiin，對烘焙跟攝影方面非常有興趣，身為男友的我便鼓勵她，發展成為副業吧！我也會在旁學習，一起幫忙她的。</p>
-            <p>
-             未來會繼續慢慢開創新口味，請多多指教！
-            </p>
-      
-    </div>
-    <img src="./assets/images/fan.JPG "alt="">
-    
-    </div>
-
-</div> -->
     </main>
      <!-- main content end -->
      <!-- footer start  -->

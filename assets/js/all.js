@@ -28,7 +28,7 @@ AOS.init({
   // values from 0 to 3000, with step 50ms
   easing: 'ease',
   // default easing for AOS animations
-  once: false,
+  once: true,
   // whether animation should happen only once - while scrolling down
   mirror: false,
   // whether elements should animate out while scrolling past them
@@ -133,7 +133,9 @@ $(document).ready(function () {
 
 
   gsapAnimate();
-  gsapAnimate2();
+  gsapAnimate2(); // 首頁兩張圖片切換
+
+  Cocoen.parse(document.body);
 }); // document ready end
 
 var swiper = new Swiper(".commentSwiper", {

@@ -21042,6 +21042,10 @@ fieldset:disabled .btn {
   width: 0;
 }
 
+.max-width-none {
+  max-width: none;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -21414,6 +21418,14 @@ input[type="radio"] {
 .step.check::before {
   content: "\2713";
   font-size: 18px;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid rgba(22, 26, 20, 0.7);
+}
+
+.nav-tabs .nav-link.active {
+  border-color: rgba(22, 26, 20, 0.7) rgba(22, 26, 20, 0.7) #F0F0F0;
 }
 
 .loading-overlay {
