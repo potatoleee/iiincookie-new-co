@@ -21068,6 +21068,12 @@ main {
   margin-top: 72px;
 }
 
+@media (max-width: 767px) {
+  main {
+    margin-top: 76px;
+  }
+}
+
 body {
   font-weight: 400;
   line-height: 1.5;
@@ -21639,10 +21645,16 @@ footer {
 .banner {
   background-image: url("../images/newbanner.jpg");
   background-size: cover;
-  height: 100vh;
+  height: calc( 100vh - 72px);
   background-repeat: no-repeat;
   position: relative;
   background-position: center;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    height: calc( 100vh - 76px);
+  }
 }
 
 .banner__text {
